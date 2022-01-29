@@ -23,7 +23,9 @@
             <div class="container-fluid">
             <a class="navbar-brand" aria-current="page" href="{{ url('/') }}" style="font-size:30px;">Photo-Print Studio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
             </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -60,7 +62,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-label="Toggle navigation" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
@@ -296,7 +298,15 @@
 
                         <h2>Tehnologije</h2>
 
-                        <p>HTML, CSS, JS, SQL i jos mnogo toga.</p>
+                        <div class="w3-center">
+                        <img id="html" src="assets/HTML5.png" alt="HTML" height="180px" width="180px">
+                        <img id="css" src="assets/css.png" alt="CSS" height="180px" width="140px">
+                       <img src="assets/jss.png" alt="JS" height="150px" width="180px">
+                       <img src="assets/vuejs.png" alt="VUE" height="150px" width="180px">
+                       <img src="assets/mysql.png" alt="SQL" height="150px" width="180px">
+                       <img src="assets/php.png" alt="PHP" height="150px" width="180px">
+                       <img src="assets/bootstrap.png" alt="BOOT" height="150px" width="180px">
+                       </div>
 
                         <h2>Dijagam</h2>
 

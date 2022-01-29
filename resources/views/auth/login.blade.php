@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="text-block text-center my-3">
                                     <span class="text-small font-weight-semibold">Niste član ?</span>
-                                    <a href="register.html" class="text-black text-small">Napravite račun!</a>
+                                    <a href="register" class="text-black text-small">Napravite račun!</a>
                                 </div>
                             </form>
                         </div>

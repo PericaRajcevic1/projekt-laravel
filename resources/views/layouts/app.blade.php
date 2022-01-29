@@ -18,14 +18,20 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
-    <nav class="navbar navbar-expand-lg text-uppercase " style="background-color: #2c3e50;">
+    <nav class="navbar navbar-expand-lg text-uppercase "  style="background-color: #2c3e50;">
             <div class="container-fluid">
             <a class="navbar-brand" aria-current="page" href="{{ url('/') }}" style="font-size:30px;">Photo-Print Studio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
+                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+                </span>
             </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

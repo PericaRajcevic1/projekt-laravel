@@ -4578,7 +4578,7 @@ input[type=button].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.125rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
@@ -4596,6 +4596,7 @@ input[type=button].btn-block {
   content: "";
   background: 50%/100% 100% no-repeat;
 }
+
 
 .navbar-nav-scroll {
   max-height: 75vh;

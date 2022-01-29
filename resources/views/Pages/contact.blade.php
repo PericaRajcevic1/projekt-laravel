@@ -3,7 +3,12 @@
   <section>
   <link href="css/contact.css" rel="stylesheet" />
 	
-		<div class="container-contact row justify-content-center">
+  <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex align-items-center auth auth-bg-1 theme-one">
+                <div class="row w-100">
+                    <div class="col-lg-4 mx-auto">
+                        <div class="auto-form-wrapper">
     
         {!! Form::open(['route'=>'contact.submit'])!!}
 			<div class="wrap-contact2">
@@ -67,5 +72,10 @@
 			</div>
 		</div>
 	</div>
+		</div>
+    		</div>
+   				 </div>
+   					 </div>
+               
 </section>
 @endsection
