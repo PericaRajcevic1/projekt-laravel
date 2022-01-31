@@ -16,6 +16,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+        <link href="css/search.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -43,11 +44,16 @@
                     <li class="nav-item">
                         <a class="nav-link active" target="_blank" href="{{ url('https://docs.google.com/document/u/1/d/11TxFTST-YhpSzlmDL3xq1k-p625J4mtB/edit?rtpof=true&sd=true') }}">Vizija</a>
                     </li>
-</ul>
-
-                    <!-- Right Side Of Navbar -->
+                    </ul>
                     <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
+                   
+                    <!-- Right Side Of Navbar -->
+
+                    <ul class="navbar-nav ms-auto ">
+                    <input id="searchbar" onkeyup="search_page()" type="text"
+		              name="search" placeholder="Pretraži...">
+                    
+                                              <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -84,6 +90,7 @@
             </div>
         </nav>
         <!-- Masthead-->
+      
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
@@ -325,14 +332,20 @@
             </div>
           </section><!-- End Team Section -->
         <!-- End Member Item -->
-        
+
         <!-- Footer-->
-        
+       
+      
+        <!-- Copyright -->
+        </footer>
           
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/search.js"></script>
+       
+        
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

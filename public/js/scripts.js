@@ -53,5 +53,29 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
  
-    //Popup
+
+
+// Open the full screen search box
+function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
     
+  // Close the full screen search box
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  function search_page() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('section-title');
+	
+	for (i = 0; i < x.length; i++) {
+		if (!x[i].innerHTML.toLowerCase().includes(input)) {
+			x[i].style.display="none";
+		}
+		else {
+			x[i].style.display="list-item";				
+		}
+	}
+}
