@@ -78,10 +78,12 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Odjavite se') }}
                                     </a>
+                                   
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
+                                    
                                 </div>
                             </li>
                         @endguest
@@ -319,7 +321,7 @@
 
                         <br>
 
-                        <img src="assets/img/dijagram.PNG" class="img-fluid" alt="">
+                        <img src="assets/img/dijagram.jpg" class="img-fluid" alt="">
                     
                     </div>
       

@@ -301,6 +301,9 @@ textarea.input2 + .focus-input2::after {
 }
 
 .contact2-form-bgbtn {
+  background-color: green;
+  outline-color: black;
+  outline-width: 2px;
   position: absolute;
   z-index: -1;
   width: 300%;

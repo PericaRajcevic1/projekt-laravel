@@ -1,4 +1,16 @@
 <?php return array (
+  'arrilot/laravel-widgets' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Arrilot\\Widgets\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Widget' => 'Arrilot\\Widgets\\Facade',
+      'AsyncWidget' => 'Arrilot\\Widgets\\AsyncFacade',
+    ),
+  ),
   'facade/ignition' => 
   array (
     'providers' => 
@@ -15,6 +27,24 @@
     'providers' => 
     array (
       0 => 'Fruitcake\\Cors\\CorsServiceProvider',
+    ),
+  ),
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
+  'larapack/doctrine-support' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Larapack\\DoctrineSupport\\DoctrineSupportServiceProvider',
     ),
   ),
   'laravel/sail' => 
@@ -57,6 +87,17 @@
       'Html' => 'Collective\\Html\\HtmlFacade',
     ),
   ),
+  'livewire/livewire' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Livewire\\LivewireServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Livewire' => 'Livewire\\Livewire',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -71,11 +112,30 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'spatie/laravel-dashboard' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Dashboard\\DashboardServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Dashboard' => 'Spatie\\Dashboard\\Facades\\Dashboard',
+    ),
+  ),
   'spatie/laravel-permission' => 
   array (
     'providers' => 
     array (
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
+  'tcg/voyager' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'TCG\\Voyager\\VoyagerServiceProvider',
+      1 => 'TCG\\Voyager\\Providers\\VoyagerDummyServiceProvider',
     ),
   ),
 );

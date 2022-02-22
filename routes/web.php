@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\Admin\DashboardController;
+use Illuminate\Support\Facades\Auth;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,9 +24,28 @@ Route::get('/', function () {
 
 Route::get('/contact', 'App\Http\Controllers\PagesController@index');
 
+
+Route::get('pages/profiles', 'ProfilesController@show');
+
+
+
+
 Route::get('contact', 'PagesController@showContactForm')->name('contact.show');
 Route::post('contact', 'PagesController@submitContactForm')->name('contact.submit');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::middleware(['auth','isAdmin'])->group(function () {
+    Route::get('/dashboard','Admin\FrontendController@index');
+    
+
+    Route::get('users',[DashboardController::class,'users']);
+    Route::get('view-users/{id}',[DashboardController::class,'viewuser']);
+
+});
+
+
+
